@@ -44,8 +44,18 @@ services:
       POSTGRES_PASSWORD: strapi
     volumes:
       - ./data:/var/lib/postgresql/data
-      
-      
+
+  pgadmin:
+    container_name: pgadmin_container
+    image: dpage/pgadmin4
+    environment:
+      PGADMIN_DEFAULT_EMAIL: 'pgadmin4@pgadmin.org'
+      PGADMIN_DEFAULT_PASSWORD: 'pass'
+
+    ports:
+      - '5050:80'
+    depends_on:
+      - postgres      
  ```
  
  
