@@ -49,7 +49,7 @@ services:
     container_name: pgadmin_container
     image: dpage/pgadmin4
     environment:
-      PGADMIN_DEFAULT_EMAIL: 'pgadmin4@pgadmin.org'
+      PGADMIN_DEFAULT_EMAIL: 'mfalconsoft@gmail.com'
       PGADMIN_DEFAULT_PASSWORD: 'pass'
 
     ports:
