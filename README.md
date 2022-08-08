@@ -1,4 +1,4 @@
-# strapi-docker
+# Cómo instalar strapi con docker.
 
 ```
 apt-get update && apt-get upgrade -y
